@@ -1,0 +1,124 @@
+/* Existing CSS remains unchanged above... */
+
+/* ========== RESPONSIVE STYLES ========== */
+@media screen and (max-width: 1024px) {
+    .main,
+    .main1,
+    .stand,
+    .store-buttons {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .logo {
+      margin-right: 0;
+      justify-content: center;
+    }
+  
+    .menu {
+      flex-direction: column;
+      align-items: center;
+      margin-left: 0;
+    }
+  
+    .square-cylinder {
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+      position: static;
+    }
+  
+    #square1,
+    #square2,
+    #square3,
+    #square4 {
+      width: 70%;
+      height: auto;
+      border-radius: 30px;
+    }
+  
+    .bigrec {
+      flex-direction: column;
+      margin-left: 0;
+      margin-top: 10%;
+      align-items: center;
+      position: static;
+      gap: 10px;
+    }
+  
+    .rec,
+    .rec1,
+    .rec2,
+    .rec3 {
+      width: 80%;
+      height: auto;
+      font-size: 12px;
+      padding: 10px;
+    }
+  
+    .testimonial-section {
+      padding: 40px 10px;
+    }
+  
+    .testimonial {
+      width: 90%;
+    }
+  
+    .footcontainer {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-section {
+      text-align: center;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .navbar {
+      flex-direction: column;
+    }
+  
+    .trust p,
+    .seat p {
+      left: 10%;
+      top: 50px;
+      text-align: center;
+      width: 80%;
+      position: relative;
+    }
+  
+    .bulb,
+    .bulb1,
+    .bulb2,
+    .bulb3 {
+      width: 100%;
+      height: auto;
+    }
+  
+    .feat {
+      width: 50%;
+      position: static;
+      margin-top: 10px;
+    }
+  
+    .text,
+    .text1 {
+      margin-left: 5%;
+    }
+  
+    .store-buttons {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .footer {
+      padding: 40px 10px;
+    }
+  
+    .footer-bottom {
+      font-size: 12px;
+    }
+  }
+  
