@@ -9,13 +9,13 @@
 </head>
 <script>
   document.querySelector('.menu-toggle').addEventListener('click', function() {
-    document.querySelector('.links').classList.toggle('active');
+    document.querySelector('.links').classList.toggle('act ive');
   });
 </script>
-<body>
+<body style="overflow-x: hidden;">
   <div class="big">
     <nav class="navbar">
-        <img src="logo.png" alt="" style="width: 10%; margin-right: 35%; margin-bottom: 3%;">
+        <img src="logo.png" alt="" style="width: 10%;">
         <!-- <div class="menu-toggle">
           <i class="fas fa-bars"></i>
         </div> -->
@@ -26,18 +26,20 @@
             <li><a href="price.html">Pricing</a></li>
             <li><a href="login.html" class="btn">Login</a></li> 
         </ul> 
-        <a href="signup.html"><button style="height: 6vh; width: 150px; background-color: transparent; border: 
-             1px solid#6BFCFB;border-radius: 50px; color: white; justify-content: center;
-             align-items: center; margin-bottom: 30%;">create an account</button></a>
+        <a href="signup.html"><button style="width: 150px; background-color: transparent; border: 
+             1px solid#6BFCFB; border-radius: 50px; color: white; justify-content: center;
+             align-items: center;">create an account</button></a>
     </nav>
     <div class="main">
       <div class="text">
         <h1 style="font-size: 70px;">Reliable <br><img src="paybutton.png" alt=""  style="width: 20%; ">  for <br>your business</h1>
         <p style="margin-bottom: 5%;">The best solution for managing your finance, by using our <br>
           product you will get various benefits.</p>
+         <div class="main_btn">
           <a href="gateway.html"><button style="height: 6vh; width: 150px;border: none; background-color: #9333EA;border-radius: 50px; color: white;
-          ">Get a card</button></a>
-          <a href="work.html"><button style="height: 6vh; width: 150px;  border: none; background-color: #6BFCFB; color: #1E1B4B; border-radius: 50px; margin-top: 5%;">How it works →</button></a>
+            ">Get a card</button></a>
+            <a href="work.html"><button style="height: 6vh; width: 150px;  border: none; background-color: #6BFCFB; color: #1E1B4B; border-radius: 50px;">How it works →</button></a>
+         </div>
       </div>
       <div>
         <img src="visa globe.png" alt="">
@@ -67,7 +69,7 @@
             </div>
        </div>
     </div>
-    <div id="services">
+    <div style="overflow-x: hidden;" id="services">
      <h1 style="font-size: 50px; text-align: center; margin-top: 10%;">What we provide?</h1>
      <p style="text-align: center;">We offer secure, seamless payments, automated payouts, smart invoicing, <br>
        and real-time analytics for effortless transactions.</p>
@@ -120,24 +122,25 @@
               </a>
           </div>
         </div>
-        <div class="phone">
-          <img src="Group 5.png" alt="" >
+        <div class="phone" style="overflow-x: hidden; margin-top: 50px;">
+          <img src="Group 5.png" alt="" class="phone_cloud">
         </div>
       </div>
      <div class="stand">
-        <div class="seat" style="width: 1100px; background-color: #9333EA; border-radius: 10px;margin-left: 10%; height: 400px; margin-top: 10%;">
-         <img src="2a0b3a376f48eccb1c34569d1e235656-removebg-preview 1.png" alt="" style="position: absolute; width: 500px;
-          height: 500px; margin-bottom: 9%; margin-right: 62%;">
+        <div class="seat">
+         <img src="2a0b3a376f48eccb1c34569d1e235656-removebg-preview 1.png" alt="" class="atm_card" style="position: absolute; width: 30%;
+          height: 500px; bottom: 0px; left: 0px">
+          <div class="boxtext">
+            <h1 style="font-size: 50px;">Create your own debit <span style="color: #1E1B4B;">card design</span></h1>
+            <p style="padding: 12px 0px;">We are have a friendly mobile app to support your finance management, manage your income and expenses</p>
+            <div class="box_btn">
+              <a href="gateway.html"><button style="padding: 13px 30px; border: none; background-color: #1E1B4B; border-radius: 50px; color: white;">Get a card</button></a>
+              <a href="work.html"><button style="padding: 12px 25px; border: none; background-color: #6BFCFB; color: #1E1B4B; border-radius: 50px;">How it works →</button></a>
+            </div>
+          </div>
         </div>
-        <div class="boxtext" style="margin-left: 53%;position: absolute; height: 50vh; margin-top:7%;">
-          <h1 style="font-size: 50px; position: absolute; padding: -50px;">Create your <br> own debit <br><span style="color: #1E1B4B;">card design</span></h1>
-          <p style="margin-top: 55%;">We are have a friendly mobile app to support your <br>finance management, manage your income and <br>expenses</p>
-            <a href="gateway.html"><button style="height: 6vh; width: 150px;border: none; background-color: #1E1B4B;border-radius: 50px; color: white; margin-top: 5%;
-            ">Get a card</button></a>
-            <a href="work.html"><button style="height: 6vh; width: 150px;  border: none; background-color: #6BFCFB; color: #1E1B4B; border-radius: 50px; margin-top: 5%;">How it works →</button></a>
-        </div>
-      </div>
-     <!-- </div>  -->
+      </div> 
+     </div> 
      <div class="testimonial-section">
         <h1 style="font-size: 50px; text-align: center;">What our <br><span style="color:#6BFCFB ;">customer</span> say</h1>
         <p style="text-align: center;">Our Customers are happy with our service.</p>
