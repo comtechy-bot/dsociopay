@@ -7,29 +7,44 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<script>
-  document.querySelector('.menu-toggle').addEventListener('click', function() {
-    document.querySelector('.links').classList.toggle('act ive');
-  });
-</script>
 <body style="overflow-x: hidden;">
   <div class="big">
     <nav class="navbar">
-        <img src="logo.png" alt="" style="width: 10%;">
+        <div>
+          <img src="logo.png" alt="" width="150px">
+        </div>
         <!-- <div class="menu-toggle">
           <i class="fas fa-bars"></i>
         </div> -->
         <ul class="links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="#services">Services</a></li>
+            <li><a href="services">Services</a></li>
             <li><a href="feature.html">Features</a></li>
             <li><a href="price.html">Pricing</a></li>
-            <li><a href="login.html" class="btn">Login</a></li> 
-        </ul> 
-        <a href="signup.html"><button style="width: 150px; background-color: transparent; border: 
+          </ul> 
+        <div style="width: 20%; display: flex; justify-content: center; align-items: center;">
+          <a href="login.html">Login</a> 
+          <a href="signup.html"><button style="background-color: transparent; border: 
              1px solid#6BFCFB; border-radius: 50px; color: white; justify-content: center;
-             align-items: center;">create an account</button></a>
-    </nav>
+             align-items: center; padding: 15px; cursor: pointer;">Create an account</button>
+          </a>
+        </div>
+      </nav>
+      <!-- Hamburger Menu -->
+      <div class="open_btn" id="openBtn">
+        <img src="./hamburger_menu.png" alt="menu" width="24px">
+      </div>
+
+      <div id="sideMenu" class="side_menu">
+        <a href="javascript:void(0)" class="closeBtn" id="closeBtn">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="services">Services</a>
+        <a href="feature.html">Features</a>
+        <a href="price.html">Pricing</a>
+        <a href="login.html" class="btn">Login</a>
+      </div>
+      
+
     <div class="main">
       <div class="text">
         <h1 style="font-size: 70px;">Reliable <br><img src="paybutton.png" alt=""  style="width: 20%; ">  for <br>your business</h1>
@@ -47,8 +62,8 @@
     </div>
      <div class="contain">
        <div class="trust">
-          <img class="trust" src="Group 7.png" alt="" style="width: 80%;">
-            <P>Trusted by 10,000 customers</P>
+             <img class="trust" src="Group 7.png" alt="" style="width: 80%;">
+             <p>Trusted by 10,000 customers</p>
              <div class="bigrec">
               <!--<div class="rec">
                 <p> <strong>10</strong> YEARS OF EXPERIENCE</p>
@@ -63,48 +78,36 @@
                   <p><strong> 1.5%</strong> CASH BACK4</p>
               </div> 		                 -->
                <button class="rec"><strong>10</strong> YEARS OF EXPERIENCE</button>
-               <button class="rec1"><strong>5K</strong> ACTIVE USER</button>
-               <button class="rec2"><strong>10</strong> BANK PARTNER</button>
-               <button class="rec3"><strong>1.5%</strong> CASH BACK</button>
+               <button class="rec"><strong>5K</strong> ACTIVE USER</button>
+               <button class="rec"><strong>10</strong> BANK PARTNER</button>
+               <button class="rec"><strong>1.5%</strong> CASH BACK</button>
             </div>
        </div>
     </div>
     <div style="overflow-x: hidden;" id="services">
-     <h1 style="font-size: 50px; text-align: center; margin-top: 10%;">What we provide?</h1>
-     <p style="text-align: center;">We offer secure, seamless payments, automated payouts, smart invoicing, <br>
+     <h1 class="what_we_provide">What we provide?</h1>
+     <p style="text-align: center; padding: 20px 0px;">We offer secure, seamless payments, automated payouts, smart invoicing, <br>
        and real-time analytics for effortless transactions.</p>
     <div class="shapy-image">
-      <img src="shapy.png" alt="">
-      <div class="square-cylinder">
-        <div id="square1">
-          <img src="bulb.png" alt="" class="bulb">
-          <div class="feat">
-            <h1>Instant</h1>
-            <p>We are using instant cashless payment</p>
-        </div>
+      <div class="square_cylinder">
+        <img src="bulb.png" alt="" class="bulb">
+        <h1>Instant</h1>
+        <p>We are using instant cashless payment</p>
       </div>
-      <div id="square2">
+      <div class="square_cylinder">
         <img src="bulb1.png" alt="" class="bulb">
-        <div class="feat">
-          <h1 class="font-size:5px;">Exchange</h1>
-          <p>Easy to exchange your money</p>
-        </div>
+        <h1>Exchange</h1>
+        <p>Easy to exchange your money</p>
       </div>
-      <div id="square3">
+      <div class="square_cylinder">
         <img src="bulb2.png" alt="" class="bulb">
-        <div class="feat">
-          <h1>Cashback</h1>
-          <p><strong>1.5%</strong> cashback of transaction</p>
-        </div> 
+        <h1>Cashback</h1>
+        <p>Cashback on transaction</p>
       </div>
-      <div id="square4">
+      <div class="square_cylinder">
         <img src="bulb3.png" alt="" class="bulb">
-        <div class="feat">
-          <h1>Mobile app</h1>
-          <p>We have friendly mobile app</p>
-        </div> 
-      </div>
-
+        <h1>Mobile App</h1>
+        <p>We have user-friendly mobile app</p>
       </div>
     </div>
   </div>
@@ -200,5 +203,19 @@
           &copy; 2025 Vividpay. All rights reserved.
         </div>
       </footer>
+
+      <script>
+        const menu= document.getElementById('sideMenu')
+        const openBtn= document.getElementById('openBtn')
+        const closeBtn= document.getElementById('closeBtn')
+      
+       openBtn.addEventListener('click', () => {
+        menu.style.width= '100%';
+       })
+      
+        closeBtn.addEventListener('click', () =>{
+          menu.style.width= '0';
+        })
+      </script>
 </body>
 </html>
