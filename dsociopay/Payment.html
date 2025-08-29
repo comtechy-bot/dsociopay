@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Payment Method</title>
+  
+</head>
+<body>
+  <!-- <nav class="navbar">
+    <img src="logo (2).png" alt="" style="width: 10%; margin-right: 40%; margin-bottom: 3%;">
+    <ul class="links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="feature.html">Features</a></li>
+        <li><a href="price.html">Pricing</a></li>
+        <li><a href="login.html" class="btn">Login</a></li> 
+    </ul> 
+    <a href="signup.html"><button style="height: 6vh; width: 150px; background-color: transparent; border: 
+         1px solid#6BFCFB;border-radius: 50px; color: white; justify-content: center;
+         align-items: center; margin-bottom: 30%;">create an account</button></a>
+</nav> -->
+  <div class="payment-box">
+    <h2>Payment method</h2>
+    <div>
+
+        <!-- Paypal -->
+        <label class="method-option">
+        <input type="radio" name="payment" />
+        <span>Paypal</span>
+        </label>
+        <!-- Credit Card Section -->
+        <div class="method-option">
+          <input type="radio" name="payment" checked />
+          <span>Credit Card</span>
+        </div>
+        <div class="card-logos" style="margin-left: 80%; margin-top: -10px; margin-bottom: 10px;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa" />
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png" alt="Mastercard" />
+        </div>
+
+    </div>
+
+    <div class="credit-card-section">
+      <div class="form">
+        <input type="text" placeholder="Card Holder Name" value="Gabriela Lima" />
+        <input type="text" placeholder="Card Number" value="4123 4567 8910 1234" />
+        <div class="form-row">
+          <input type="text" placeholder="MM/YY" value="07/23" />
+          <input type="text" placeholder="CVV" value="123" />
+        </div>
+        <button type="submit">Submit</button>
+      </div>
+
+      <div class="card-image">
+        <img src="card.png" alt="Credit Card" />
+      </div>
+    </div>
+
+    <!-- Digital Payment -->
+    <label class="method-option">
+      <input type="radio" name="payment" />
+      <span>Digital payment</span>
+    </label>
+    <p style="margin-bottom: 2%; margin-left: 2%;"><strong>#Razorpay</strong> We’re using RazorPay </p>
+
+    <!-- Cheque -->
+    <label class="method-option">
+      <input type="radio" name="payment" />
+      <span>Cheque</span>
+    </label>
+  </div>
+</body>
+</html>
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-image: url(Sign\ up.png);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    /*.navbar{ */
+      /* background-color: rgba(0, 0, 0, 0.281); */
+      /* height: 20vh;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+  
+  }
+  .links{
+      color: white;
+      display: flex;
+      justify-content: center;
+      height: 10vh;
+      list-style: none;
+     
+  }
+  a{
+    color: white;
+    padding: 14px;
+    text-align: center;
+    text-decoration: none;
+   
+  } */
+    .payment-box {
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+      padding: 30px;
+      max-width: 900px;
+      width: 100%;
+    }
+    
+    .payment-box h2 {
+      font-size: 24px;
+      margin-bottom: 25px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .method-option {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .method-option input[type="radio"] {
+      transform: scale(1.2);
+    }
+    
+    .credit-card-label {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .card-logos {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .card-logos img {
+      height: 24px;
+      width: auto;
+      object-fit: contain;
+    }
+
+    .credit-card-section {
+      display: flex;
+      gap: 30px;
+      margin-bottom: 30px;
+      flex-wrap: wrap;
+    }
+
+    .form {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .form input {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+      width: 100%;
+    }
+
+    .form-row {
+      display: flex;
+      gap: 15px;
+    }
+
+    .form button {
+      padding: 12px;
+      background-color: #9333EA;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .form button:hover {
+      background-color:#6BFCFB;
+      color: #1E1B4B;
+    }
+
+    .card-image {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card-image img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    }
+  </style>
